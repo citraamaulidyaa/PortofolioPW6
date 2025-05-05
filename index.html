@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portofolio Pribadi</title>
+  <link rel="stylesheet" href="Style/Style.css"/>
+</head>
+<body>
+
+  <nav class="sticky-nav">
+    <div class="container nav-container">
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#multimedia">Multimedia</a>
+        <a href="#formulir">Formulir</a>
+      </div>
+    </div>
+  </nav>
+  
+  <header>
+    <div id="home">
+      <div class="container">
+        <h1 class="main-title">Portofolio Pribadi</h1>
+      </div>
+    </div>
+  </header>
+  
+  <div class="audio-note">
+    <p>Yuk! lihat lihat sambil dengerin musik𝄞</p>
+    <audio controls>
+      <source src="Audio/Untukku - Chrisye.mp3" type="audio/mp3" />
+    </audio>
+  </div>
+
+  <main class="container">
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="project-cut">
+        <img src="Gambar/profil.png" alt="profil" class="cut-media">
+        
+        <div class="project-text">
+        <h4>Halo!!</h4>
+        <h5>Saya, Citra Maulidya Haritsah</h5>
+        <p>Mahasiswa aktif Universitas Internasional Semen Indonesia, yang saat ini sedang menempuh pendidikan S1 Sistem Informasi, Semester 4. Memiliki ketertarikan untuk belajar teknologi baru, mengasah keterampilan di bidang pengembangan perangkat lunak, dan mencari cara untuk menerapkannya. Saya percaya bahwa teknologi dapat membawa perubahan positif, oleh karena itu saya bersemangat untuk berkontribusi dalam proyek yang memberikan dampak nyata serta terus berkembang bersama inovasi yang ada.</p>
+        </div>
+
+      </div>
+
+      <div class="project-cut">
+        <img src="Gambar/hobi.png" alt="hobi" class="full-media">
+      </div>
+      
+      <h3>Galeri Hobi</h3>
+      <div class="gallery">
+        <img src="Gambar/memasak.jpg" alt="Hobi Memasak">
+        <img src="Gambar/memotret.jpg" alt="Hobi Memotret">
+        <img src="Gambar/mendengar.jpg" alt="Hobi Mendengar Musik">
+        <img src="Gambar/hobi 1.jpg" alt="Hobi 1">
+        <img src="Gambar/hobi 2.jpg" alt="Hobi 2">
+        <img src="Gambar/hobi 3.jpg" alt="Hobi 3">
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="grid-projects">
+        <div class="project-card">
+          <img src="Gambar/fuara persjab.png" alt="Fuara Persjab">
+          <h6>Project 1: Design Mobile - Fuara Persjab</h6>
+          <p>Fuara Persjab adalah aplikasi manajemen stok dan keuangan untuk pelaku UMKM. Aplikasi ini mempermudah pencatatan stok masuk dan keluar, memantau jumlah produk, serta menyajikan laporan keuangan dan profit secara berkala. </p>
+         </div>
+        <div class="project-card">
+          <img src="Gambar/plan plate.png" alt="Plan Plate">
+          <h6>Project 2: UI/UX Design Mobile - Plan Plate</h6>
+          <p>Plan Plate adalah aplikasi perencana menu harian yang membantu pengguna dalam mengatur daftar makanan sehari-hari agar lebih hemat waktu dan biaya.</p>
+        </div>
+    </section>
+
+    <section id="multimedia">
+      <h2>Multimedia</h2>
+      <p>Vidio Profil dosen Sistem Informasi UISI</p>
+      <video controls class="full-media">
+        <source src="Vidio/profil dosen.mp4" type="video/mp4">
+      </video>
+    </section>
+
+    <section>
+      <h2>Comment from API</h2>
+      <div class="project-cut">
+        <div class="project-textapi">
+          <ul id="apiList"></ul>
+        </div>
+      </div>
+      
+      <h2>Media from PEXELS</h2>
+      <div class="project-cut">
+        <div id="mediaRow" class="media-row">
+        </div>
+      </div>
+    </section>
+
+    <section id="formulir">
+      <h2>Formulir</h2>
+      <p>Jika ingin menghubungi saya, silahkan isi formulir dibawah ini.</p>
+      <form action="#" method="post">
+        <input type="text" name="nama" placeholder="Nama lengkap" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="tel" name="nomor telepon" placeholder="Nomor Telepon" required>
+        <textarea name="pesan" rows="5" placeholder="Tulis pesan..." required></textarea>
+        <button type="submit">Kirim</button>
+      </form>
+    </section>
+
+    <section id="guestbook">
+      <h2>Buku Tamu</h2>
+      <div class="guestbook-form">
+          <input type="text" id="guest-name-input" placeholder="Masukkan nama Anda...">
+          <button id="add-guest-button">Tambah Tamu</button>
+      </div>
+      <h2>Daftar Tamu:</h2>
+      <ul id="guest-list">
+          </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p class="kontak-footer">
+        <a href="https://wa.me/6285812798061" target="_blank">WhatsApp</a> |
+        <a href="https://www.instagram.com/mauldycitra" target="_blank">Instagram</a>
+      </p>
+      <p style="text-align: center;"> 
+        &copy; 2025 Citra Maulidya. Semua Hak Cipta Dilindungi
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
